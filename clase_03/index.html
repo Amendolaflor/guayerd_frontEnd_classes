@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>clase3</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<h1 id="titulo">Registro de Usuario</h1>
+	<hr>
+	<br><br>
+	<form>
+		<label for="userName">Nombre de usuario:</label>
+		<input type="text" id="userName">
+		<br><br>
+		<label for="password">Password:</label>
+		<input type="password" maxlength="8" id="password">
+		<br><br>
+		<label for="password">Repita password:</label>
+		<input type="password" maxlength="8" id="password">
+		<br><br>
+		<label for="dateBirth">Repita password:</label>
+		<input type="date" id="dateBirth">
+		<br><br>
+		<label for="edad">Edad</label>
+		<select id="edad">
+			<option></option>
+			<option value="mayor">Soy mayor de 18 años</option>
+			<option value="menor">Soy menor de 18 años</option>
+		</select>
+		<br><br>
+		<label for="nacionalidad">Nacionalidad</label>
+		<select id="nacionalidad">
+			<option></option>
+			<option value="argentina">Argentina</option>
+			<option value="sueca">Sueca</option>
+			<option value="esquimal">Esquimal</option>
+			<option value="liliputiense">Liliputiense</option>
+		</select>
+		<br><br>
+		<p>¿Desea recibir novedades?</p>
+		<input type="checkbox" id="siDeseo">
+		<label for="si">Si, buenisimo!</label>
+		<br>
+		<input type="checkbox" id="noDeseo">
+		<label for="no">No, gracias</label>
+		<br><br>
+		<input type="submit" value="Login" id="botonSubmit">
+	</form>
+
+</body>
+
+</html>
