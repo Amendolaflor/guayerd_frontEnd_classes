@@ -160,9 +160,11 @@ let multiplicacionEj14 = sumaEj14 * 10;
 
 let restoEj14 = multiplicacionEj14 / 3
 
-let restoFinal = restoEj14 % 3
 
-console.log(restoEj14)
+console.log(sumaEj14);
+console.log(multiplicacionEj14);
+console.log(restoEj14);
+
 
 
 
