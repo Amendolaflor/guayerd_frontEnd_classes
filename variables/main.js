@@ -84,7 +84,6 @@
 
 /////// 7
 // let numeroMinutos = parseInt(window.prompt("Ingresa un numero?"));
-
 // let resultadoEnSegundos = numeroMinutos * 60;
 
 // console.log("Tu numero en segundos es:" + " " + resultadoEnSegundos)
@@ -123,7 +122,6 @@
 /////////// 11
 // let nombreEj11 = window.prompt("Ingrese nombre");
 // let edadEj11 = parseInt(window.prompt("Cuantos años cumplio o cumple este año?"));
-
 // let añoActualEj11 = 2021;
 // let añoNacimientoEj11 = añoActualEj11 - edadEj11;
 
@@ -133,17 +131,15 @@
 /////////// 12
 // let nombreEj12 = window.prompt("Ingrese nombre");
 // let temperatura = parseInt(window.prompt("Ingrese la temperatura del dia"));
-
 // let temperaturaFarenheit = (temperatura * (9/5)) + 32;
 
-// console.log(nombreEj12 + ": " + "la tempertura ingresada en Farenheit es:" + " " + temperaturaFarenheit);
-// alert(nombreEj12 + ": " + "la tempertura ingresada en Farenheit es:" + " " + temperaturaFarenheit);
+//console.log(nombreEj12 + ": " + "la tempertura ingresada en Farenheit es:" + " " + temperaturaFarenheit);
+//alert(nombreEj12 + ": " + "la tempertura ingresada en Farenheit es:" + " " + temperaturaFarenheit);
 
 
 /////////// 13
 // let nombreEj13 = window.prompt("Ingrese nombre");
 // let temperaturaEj13 = parseInt(window.prompt("Ingrese la temperatura del dia"));
-
 // let temperaturaCelsius = Math.round((temperaturaEj13 - 32) * (5/9));
 
 // console.log(nombreEj13 + ": " + "la tempertura ingresada en Celsius es:" + " " + temperaturaCelsius);
@@ -153,17 +149,17 @@
 
 /////////// 14
 let numeroEj14 = parseInt(window.prompt("Ingrese numero"));
-
 let sumaEj14 = numeroEj14 + 5;
-
 let multiplicacionEj14 = sumaEj14 * 10;
+let restoEj14 = multiplicacionEj14 % 3;
 
-let restoEj14 = multiplicacionEj14 / 3
-
-
+alert(`El numero ingresado sumandole 5 es igual a ${sumaEj14},  
+multiplicando la suma por 10 es igual a ${multiplicacionEj14}, 
+y el resto de su division por 3 es igual a ${restoEj14}.`);
+        
 console.log(sumaEj14);
 console.log(multiplicacionEj14);
-console.log(restoEj14);
+console.log(restoEj14);	
 
 
 
