@@ -56,7 +56,6 @@ let pies = NumeroEj5 / 40
 let centimetros = NumeroEj5 * 100
 let pulgadas = Math.round(centimetros / 2.54)
 
-
 alert("Tu numero convertido a pies es:" + " " + pies  + "\n" +
 "Tu numero convertido a centimetros es:" + " " + centimetros + "\n" 
 + "Tu numero convertido a pulgadas es:" + " " + pulgadas,);
@@ -66,7 +65,6 @@ console.log("Tu numero convertido a pies es:" + " " + pies, "Tu numero convertid
 ///////////// 6
 let primerNumeroEj6 = parseInt(prompt("Ingrese un numero"));
 let segundoNumeroEj6 = parseInt(prompt("Ingrese otro numero"));
-
 let resultadoEj6 = primerNumeroEj6 + segundoNumeroEj6
 
 console.log("La suma de tus numero es:" + " " + resultadoEj6);
@@ -111,7 +109,6 @@ let numeroDescuento = parseInt(prompt("Ingrese un numero para descontar"));
 let resultadoPorcentaje = (numeroEj10 * numeroDescuento) / 100; 
 let resultadoConDescuento = numeroEj10 - resultadoPorcentaje
 
-
 console.log("El precio con descuento es $:" + " " + resultadoConDescuento);
 alert("El precio con descuento es $:" + " " + resultadoConDescuento);
 
@@ -152,8 +149,7 @@ let restoEj14 = multiplicacionEj14 % 3;
 
 alert(`El numero ingresado sumandole 5 es igual a ${sumaEj14},  
 multiplicando la suma por 10 es igual a ${multiplicacionEj14}, 
-y el resto de su division por 3 es igual a ${restoEj14}.`);
-        
+y el resto de su division por 3 es igual a ${restoEj14}.`);        
 console.log(sumaEj14);
 console.log(multiplicacionEj14);
 console.log(restoEj14);	
@@ -166,7 +162,6 @@ let primerNumeroString = window.prompt("Ingrese un numero");
 let segundoNumeroString = window.prompt("Ingrese otro numero");
 let numerosJuntos = primerNumeroString + segundoNumeroString
 
-
 console.log("La union de tus numero es:" + " " + numerosJuntos);
 alert("La union de tus numero es:" + " " + numerosJuntos);
 
@@ -175,7 +170,6 @@ alert("La union de tus numero es:" + " " + numerosJuntos);
 let dias = parseInt(prompt("Ingresa un numero de dias"));
 let segundosxDia = (60 * 60) * 24;
 let diasSegundos = dias * segundosxDia;
-
 
 console.log(`La cantidad de dias ingresados equivale a: ${diasSegundos} segundos.`);
 alert(`La cantidad de dias ingresados equivale a: ${diasSegundos} segundos.`);
