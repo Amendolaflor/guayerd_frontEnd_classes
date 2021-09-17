@@ -157,7 +157,6 @@ console.log(restoEj14);
 
 
 ////////////// 0  BONUS
-
 let primerNumeroString = window.prompt("Ingrese un numero");
 let segundoNumeroString = window.prompt("Ingrese otro numero");
 let numerosJuntos = primerNumeroString + segundoNumeroString
@@ -167,10 +166,10 @@ alert("La union de tus numero es:" + " " + numerosJuntos);
 
 
 ////////////// 1  BONUS
-let dias = parseInt(prompt("Ingresa un numero de dias"));
+let años = parseFloat(prompt("Ingresa un numero de años"));
 let segundosxDia = (60 * 60) * 24;
-let diasSegundos = dias * segundosxDia;
+let resultadoDiasxAños = años * 365;
+let resultadoSegxDia = años * segundosxDia;
 
-console.log(`La cantidad de dias ingresados equivale a: ${diasSegundos} segundos.`);
-alert(`La cantidad de dias ingresados equivale a: ${diasSegundos} segundos.`);
-
+console.log(`La cantidad de años ingresados equivale a: ${resultadoDiasxAños} dias y a ${resultadoSegxDia} segundos.`);
+alert(`La cantidad de años ingresados equivale a: ${resultadoDiasxAños} dias y a ${resultadoSegxDia} segundos.`);
