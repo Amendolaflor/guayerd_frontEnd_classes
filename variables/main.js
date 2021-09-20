@@ -51,9 +51,9 @@ alert("Tu nota final es:" + " " + notaFinal);
 
 
 // ///////////// 5
-let NumeroEj5 = parseInt(prompt("Ingrese un numero"));
-let pies = NumeroEj5 / 40
-let centimetros = NumeroEj5 * 100
+let numeroEj5 = parseInt(prompt("Ingrese un numero"));
+let pies = numeroEj5 / 40
+let centimetros = numeroEj5 * 100
 let pulgadas = Math.round(centimetros / 2.54)
 
 alert("Tu numero convertido a pies es:" + " " + pies  + "\n" +
