@@ -1,4 +1,4 @@
-// ////////////////// Ejercicios con cadenas de textos:
+// // ////////////////// Ejercicios con cadenas de textos:
 
 // Solicitar al usuario que ingrese un texto y validar si contiene la letra “a”.
 let textUser = prompt("Ingrese un texto");
@@ -86,7 +86,7 @@ function validarNumero(number) {
 	let pulgadas = Math.round(centimetros / 2.54);
 	if(number) {
 		alert(`Tu numero convertido a pies es: ${pies},\n tu numero convertido a centimetros es: ${centimetros},\n tu numero convertido a pulgadas es: ${pulgadas}`);
-	}else {
+	} else {
 		alert(`no ingresaste un numero valido`);
 	}
 }
@@ -98,10 +98,10 @@ let userAge = parseInt(prompt("Ingrese su edad"));
 function mayorEdad(edad) {
 	if(edad < 18) {
 		alert(`Oopss todavia no llegaste a los 18`)
-	}else {
+	} else {
 		if( edad < 105 ) {
 			alert(`Sos mayor de edad`)
-		}else{
+		} else {
 			alert(`Ingreso invalido`);
 		}
 	}	
@@ -115,9 +115,9 @@ let cobertura = prompt("Desea cobertura de chocolate? Ingrese A si quiere, ingre
 function pedirHelado(eleccion) {
 	if(eleccion == "a") {
 		alert(`TU PEDIDO ES: \n Sabores: ${userFlavours} con cobertura de chocolate. \n Precio: $180`);
-	}if((eleccion == "b")) {
+	} if((eleccion == "b")) {
 		alert(`TU PEDIDO ES: \n Sabores: ${userFlavours}. \n Precio: $150`);
-	}else {
+	} else {
 		alert(`No ingresaste una opcion valida`);
 	}
 }
@@ -134,7 +134,7 @@ console.log(`La suma de tus numero es: ${resultado}`);
 function esPar(numero) {
 	if(numero % 2 === 0) {
 		alert(`El resultado de la suma es numero par`)
-	}else {
+	} else {
 		alert(`El resultado de la suma es numero impar`)
 	}
 }
@@ -142,11 +142,32 @@ esPar(resultado)
 
 
 // Solicitar al usuario un número e indicar si es positivo, negativo o cero.
+let number = parseInt(prompt("Ingrese un numero"));
 
+function tipoNumero(numero) {
+	if(Math.sign(numero)=== 1) {
+		alert(`El numero ingresado es positivo`);
+	} if(Math.sign(numero)=== -1) {
+		alert(`El es ingresado es negativo`);
+	} if((Math.sign(numero)=== 0)) {
+		alert(`El es ingresado es cero`);
+	}
+}
+tipoNumero(number);
 
 
 // Solicitar al usuario que ingrese un monto. Si el monto es mayor a 2000 que aplique un descuento del 10%. Mostrar el total a pagar.
+let userAmount = parseInt(prompt("Ingrese un monto"));
 
+function aplicarDescuento(monto) {	
+	if(monto >= 2000) {
+		monto = monto - ((monto * 10) / 100);
+		alert(`El total a pagar con el 10% de descuento es: ${monto}`);
+	} else {
+		alert(`El total a pagar es: ${monto}`);
+	}	
+}
+aplicarDescuento(userAmount);
 
 
 // Solicitar al usuario que ingrese una cadena de texto y luego un una posición. Indicar si el dígito de esa posición es vocal o no lo es. (Puede ser consonante, espacio, comilla, etc.)
