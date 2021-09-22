@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>homebanking_home</title>
+	<!--fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<!--stylesheets-->
+	<link rel="stylesheet" href="./estilos.css">
+
+</head>
+
+<body>
+	<h1 class="titulo">Ingreso Clientes</h1>
+	<hr>
+	<br><br>
+	<form>
+		<h2>Registrese</h2>
+		<label for="userName">Nombre de usuario:</label>
+		<input type="text" id="userNameRegister">
+		<br><br>
+		<label for="password">Password:</label>
+		<input type="password" maxlength="8" id="passwordRegister">
+		<br><br>
+		<h2>Ingrese</h2>
+		<label for="userName">Nombre de usuario:</label>
+		<input type="text" id="userNameLogin">
+		<br><br>
+		<label for="password">Password:</label>
+		<input type="password" onchange="login()" maxlength="8" id="passwordLogin">
+		<br><br>
+
+	</form>
+
+	<script src="./app.js"></script>
+</body>
+
+</html>

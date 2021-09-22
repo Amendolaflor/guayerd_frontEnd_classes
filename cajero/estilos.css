@@ -1,0 +1,45 @@
+body {	
+	font-family: 'Manrope', sans-serif;
+	background-color: rgb(49, 48, 48);
+	color: rgb(189, 187, 187);
+	font-size: 150%;
+	text-align: center;	
+}
+
+.titulo {
+	color: rgb(221, 221, 44)
+
+
+}
+
+#botonSubmit {
+	font-size: 130%;
+	width: 120px;
+	border-radius: 10px;
+	background-color: rgb(221, 221, 44)
+}
+
+.titulo-container {
+	padding-left: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.nav-container {
+	padding-left: 50px;
+	display: flex;
+	justify-content: center
+}
+
+.nav-hijo {	
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.btn {		
+	font-size: 30px;
+	padding:10px;
+	border-radius: 5px;
+	background-color: rgb(189, 187, 187);
+}
