@@ -27,13 +27,13 @@ function verSaldo() {
 
 function retirarDinero() {
 	let extraccion = parseInt(prompt("¿Cuánto dinero desea retirar?"));
-	alert(`EXTRACCION RELIZADA CON EXITO. \n Tu saldo actual es de ${userSaldo - extraccion}`)	
+	alert(`EXTRACCION RELIZADA CON EXITO. \n Tu saldo actual es de $${userSaldo - extraccion}`)	
 }
 
 
 function depositarDinero() {
 	let deposito = parseInt(prompt("¿Cuánto dinero desea depositar?"));
-	alert(`DEPOSITO RELIZADO CON EXITO. \n Tu saldo actual es de ${userSaldo + deposito}`);	
+	alert(`DEPOSITO RELIZADO CON EXITO. \n Tu saldo actual es de $${userSaldo + deposito}`);	
 }
 
 
