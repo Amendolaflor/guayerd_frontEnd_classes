@@ -1,4 +1,4 @@
-////////// login
+// // ////////// login
 
 function login() {
 	let userReg = document.getElementById("userNameRegister").value;
@@ -13,7 +13,19 @@ function login() {
 	}
 }
 
+// let user = "grupo3";
+// let password = 1234
 
+// function login() {
+// 	let userIngresado = prompt("ingrese usuario")
+// 	let passIngresada = prompt("ingrese contraseña")	
+//   		if (user == userIngresado && password == passIngresada){
+// 		    window.location.replace("./menu.html")
+// 	   	 } else {
+// 			alert("usuario incorrecto")
+// 	   	 }
+// }
+	
 ///////////// menu princial ////////////////////////
 
 ///// fake data ---------------------
@@ -24,18 +36,20 @@ function verSaldo() {
 	alert(`Tu saldo actual es de: $${userSaldo}`);	
 }
 
-
+	
 function retirarDinero() {
-	let extraccion = parseInt(prompt("¿Cuánto dinero desea retirar?"));
-	alert(`EXTRACCION RELIZADA CON EXITO. \n Tu saldo actual es de $${userSaldo - extraccion}`)	
+	let extraccion = parseInt(prompt("¿Cuánto dinero desea retirar?"));	
+	if(userSaldo < extraccion) {
+		alert("No puede retirar ese dinero")
+	} else {
+		alert(`EXTRACCION RELIZADA CON EXITO. \n Tu saldo actual es de $${userSaldo - extraccion}`)
+	}
 }
-
 
 function depositarDinero() {
 	let deposito = parseInt(prompt("¿Cuánto dinero desea depositar?"));
 	alert(`DEPOSITO RELIZADO CON EXITO. \n Tu saldo actual es de $${userSaldo + deposito}`);	
 }
-
 
 function cambiarPassword() {	
 	let newPass = prompt(`ingrese contraseña nueva`);
