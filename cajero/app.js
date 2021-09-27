@@ -35,7 +35,6 @@ let userSaldo = 80000
 function verSaldo() {
 	alert(`Tu saldo actual es de: $${userSaldo}`);	
 }
-
 	
 function retirarDinero() {
 	let extraccion = parseInt(prompt("¿Cuánto dinero desea retirar?"));	
