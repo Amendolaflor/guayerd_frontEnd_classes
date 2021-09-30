@@ -31,10 +31,11 @@ console.log(concatArrays2);
 const cuidades = ["La Plata","Bolivar","Pehuajo","Mercedes","Junin","Olavarria","Tandil","Las Flores","Bahia Blanca","Saladillo"];
 const numeroCiudad = parseInt(prompt("ingrese un numero"));
 const newArrayCiudad = [];
+
 for(let i = 1; i <= numeroCiudad; i++) {
 	newArrayCiudad.push(cuidades[i]);
-
 }
+
 console.log(cuidades);
 console.log(newArrayCiudad[newArrayCiudad.length - 1]);
 
