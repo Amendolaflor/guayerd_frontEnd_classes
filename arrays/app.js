@@ -12,20 +12,29 @@ for(let i = 0; i < 5; i++) {
 	frutasArray.push(frutas)
 }
 
-console.log(frutasArray)
+// console.log(frutasArray)
 
 // ///b) Ahora, solicitar al usuario que ingrese otros nombres de frutas, la cantidad que desee, sin pedirle de antemano cuál será la cantidad a ingresar.
-const frutasB = prompt("Ingrese un nombre de frutas").trim();
+
+const frutasB = prompt("Ingrese un nombre de frutas otra vez").trim();
 
 let frutasBArray = frutasB.split(" ");
 console.log(frutasBArray);
 
 ///c) Concatenar ambos arrays y mostrarlo de dos formas diferentes: Con las 5 frutas al principio, y con las 5 frutas al final.
-const concatArrays1 = [...frutasBArray,...frutasArray];
-const concatArrays2 = [...frutasArray,...frutasBArray];
 
-console.log(concatArrays1); 
-console.log(concatArrays2);
+// const concatArrays1 = [...frutasBArray,...frutasArray];
+// const concatArrays2 = [...frutasArray,...frutasBArray];
+
+// console.log(concatArrays1); 
+// console.log(concatArrays2);
+
+ // otra manera facil
+const unionArrays = frutasArray.concat(frutasBArray);
+const unionArrays2 = frutasBArray.concat(frutasArray);
+
+console.log(unionArrays);
+console.log(unionArrays2);
 
 // ///2 ////// Crear un array con 10 nombres de ciudades, y solicitar al usuario que nos diga un número. Mostrar el nombre de la ciudad en esa posición del array.
 const cuidades = ["La Plata","Bolivar","Pehuajo","Mercedes","Junin","Olavarria","Tandil","Las Flores","Bahia Blanca","Saladillo"];
@@ -40,6 +49,7 @@ console.log(cuidades);
 console.log(newArrayCiudad[newArrayCiudad.length - 1]);
 
 ///3//////  Utilizar el mismo array de ciudades, solicitar al usuario un número y remover esa cantidad de ciudades del array. Mostrar dos opciones: Sacando los datos desde el principio , y desde el final del array.
+
 //const arraysplit
 
 ///4 //////  Crear un array de 8 posiciones con nombres de artistas musicales y mostrar POR SEPARADO:
