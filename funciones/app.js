@@ -88,56 +88,6 @@ validarEdad(age, drink);
 
         
 
-// const cobrar = function() {	
-// 	let pago = parseInt(prompt(`Con cuanto vas a pagar?`));
-// 	
-// 	if(pago === beer && pago === juice && pago === water) {
-// 		alert(`pago realizado con exito`);
-// 	} else if(pago > beer){
-// 		console.log(pago - beer);
-// 	} else if(pago > juice){
-// 		return `tu vuelto es ${pago - juice}`;
-// 	}  else if(pago > water){
-// 		return `tu vuelto es ${pago - water}`;
-// 	} else {
-// 		alert(`Oppss, no te alcanza.`)
-// 	}		
-// }
-	
-// cobrar()
-	
-
-
-//     if(bebida == 1 ){
-       
-//     }else if(bebida == 2 && pago > precioJugo){
-//         vuelto = pago - precioJugo;
-//         alert("El costo de la bebida es " + precioJugo + ", su vuelto es de " + vuelto);
-//     }else if(bebida == 3 && pago > precioAgua){
-//         vuelto = pago - precioAgua;
-//         alert("El costo de la bebida es " + precioAgua + ", su vuelto es de " + vuelto);
-//     }else{
-//         alert("No tiene suficiente dinero para realizar la compra");
-//     }
-// } else if(edad >= 18){
-//     if(bebida == 1 && pago > precioCerveza){
-//         vuelto = pago - precioCerveza;
-//         alert("El costo de la bebida es " + precioCerveza + ", su vuelto es de " + vuelto);
-//     }else if(bebida == 2 && pago > precioJugo){
-//         vuelto = pago - precioJugo;
-//         alert("El costo de la bebida es " + precioJugo + ", su vuelto es de " + vuelto);
-//     }else if(bebida == 3 && pago > precioAgua){
-//         vuelto = pago - precioAgua;
-//         alert("El costo de la bebida es " + precioAgua + ", su vuelto es de " + vuelto);
-//     }else{
-//         alert("No tiene suficiente dinero para realizar la compra");
-//     }
-// }else{
-//     alert("Ingrese una edad válida");
-// } 
-
-
-
 
 
 /// (Ej: La cerveza cuesta $50  y paga con 100, se le debe devolver $50. Si indica que paga con menos de lo que cuesta el producto, indicar un error).)
