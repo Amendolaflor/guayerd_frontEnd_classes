@@ -1,16 +1,10 @@
 // Maraton Guayerd -  Intro a la Programacion con JS
-
 // Los ejercicios presentan una dificultad incremental. Es conveniente avanzar en orden.
-
 // Cuando resolves uno, comentar las líneas del mismo y arrancar con el siguiente.
-
 // No es necesario usar funciones, solo donde consideren necesario.
-
 // Buena suerte!!!
 
-
 ////1 Pedir nombre al usuario y saludarlo. Pasar el texto a Mayúsculas y a Minúsculas. Mostrar ambos en pantalla.
-
 const userName = prompt("Ingrese su nombre");
 
 const saludoNombre = (nombre) => {  
@@ -52,7 +46,6 @@ const mostrarTexto = () => {
 mostrarTexto()
 
 /////4  Calculadora. Pedir ingresar dos números. Luego ingresar una operación (SUMA/RESTA/MULTI/DIV/POTENCIA). Realizar la operación y mostrar el resultado en pantalla.
-
 const calculadora = () => {
 	let num1 = parseInt(prompt(`Ingrese un numero`));
 	let num2 = parseInt(prompt(`Ingrese otro numero numero`));
@@ -89,14 +82,11 @@ function continuarOperando () {
 	}	
 }
 
-
 /////5  Vamos reutilizar la calculadora del punto 4. Pero esta vez, luego de mostrar el resultado, vamos a preguntar al usuario si desea hacer otra operación o terminar. Si quiere seguir operando, volvemos a pedir valores, operación y mostrar resultado HASTA que nos diga que no quiere continuar.
 ///Extra: investigar/googlear la función de Javascript "confirm"
 //
 
 /////6  Agregar alumnos/as a un curso. Vamos a pedirle al usuario que ingrese nombres de alumnos/as para el nuevo curso. Continuar guardando nombres HASTA que el usuario ingrese SALIR. Mostrar todos los nombres en pantalla. 
-
-
 let alumnos = [];
 
 do {
@@ -109,8 +99,7 @@ do {
 
 console.log(alumnos)
 
-// //////7  Dado el siguiente array de nombres, recorrerlo y mostrar en pantalla: Indice (posición) y Nombre con la primera letra en mayúscula.
-
+/////////7  Dado el siguiente array de nombres, recorrerlo y mostrar en pantalla: Indice (posición) y Nombre con la primera letra en mayúscula.
 const ej7Nombres = ["goku","mario","melchor","mafalda","cacho","hermione","tony","pappo","leia", "homero"];
 
 for(let i = 0; i < ej7Nombres.length; i++) {
@@ -124,7 +113,6 @@ function ponerMayuscula (palabra) {
 	let concat =  textUpper.toUpperCase() + textLower.toLowerCase();
 	console.log(concat)
 }
-
 
 //////8  Para una veterianaria. Dado el siguiente array de nombres de mascotas completar el código con las  siguentes reglas de negocio:
 // / - Si el nombre tiene más de 6 caracteres, informar: "Nombre largo"
@@ -149,7 +137,6 @@ ej8Mascotas.forEach(element => {
 		break;
 	}
 });	
-
 
 //9  Un restaurant desea mejorar su sistema de reserva para mostrar a los clientes un aproximado de costos. 
 // - Cada menor de edad pagará el menú $450 y cada adulto, $700. 
@@ -190,29 +177,21 @@ const subtotal = totalMenores + totalMayores;
 console.log(`Subtotal: ${subtotal}`)
 
 // ///10 De un consultorio médico nos piden automatizar el proceso de recepción de los pacientes. 
-
 // //   Para ello:
 // //   - Ingresar código de paciente (Number XXX, 3 dígitos de 1 a 999).
-
 //// /   - Si el código ingresado esta entre 1 y 99, es un paciente VIP.
 ////// /     - Preguntarles "Como valoran la calidad del servicio? (1..10)". Guardar el resultado ingresado.
 //// /     - Agregar el código de paciente adelante en la cola (array) de turnos
-
 //// /   - Si el código ingresado esta entre 100 y 500, es un paciente de prepaga.
 //// /     - Agregar el código de paciente al final de la cola (array) de turnos
-
 //// /   - Si el código ingresado esta entre 501 y 999, es un paciente nuevo.
 //// /     - Preguntarles "Desea pasarse a VIP?". Si la respuesta es afirmativa, guardar el código de paciente.
-//// /     - Agregar el código de paciente al final de la cola (array) de turnos
-   
+//// /     - Agregar el código de paciente al final de la cola (array) de turnos  
 //// /   - Si todos los pacientes fueron ingresados, informar en pantalla:
 //// /     - Calidad del servicio VIP. Informar valor promedio, valor máximo y valor mínimo.
 //// /     - Ingreso al consultorio: Mostrar en pantalla el orden de ingreso x código de paciente.
-//// /     - Pasarse a VIP: Mostrar en pantalla todos los códigos de pacientes que desean ser VIP
-  
+//// /     - Pasarse a VIP: Mostrar en pantalla todos los códigos de pacientes que desean ser VIP 
 //// /   - Nota: Escribir código con funciones para facilitar su lectura.
-
-
 let todosLosPacientes = [];
 
 function Paciente(codigo, tipo, opinion, upgrade) {
@@ -252,14 +231,12 @@ function ingresoOk() {
 	} else {
 		alert(`Ingresaste un codigo incorrecto. Recorda que es un numero de 1 a 999`);
 		ingresoOk()
-	}
-
-	
+	}	
 }
+
 ingresoOk()
 
-/// servicio VIP ///////  
-
+///// servicio VIP ///////  
 let pacientesVip = []
 
 todosLosPacientes.map((element) => {
@@ -271,7 +248,6 @@ todosLosPacientes.map((element) => {
 const promedio = pacientesVip.reduce((total, el) => {
 	return total + el / pacientesVip.length
 }, 0)	
-
 
 console.log(todosLosPacientes)
 console.log(pacientesVip)
