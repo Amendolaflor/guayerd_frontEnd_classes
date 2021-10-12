@@ -176,22 +176,22 @@ const subtotal = totalMenores + totalMayores;
 
 console.log(`Subtotal: ${subtotal}`)
 
-// ///10 De un consultorio médico nos piden automatizar el proceso de recepción de los pacientes. 
-// //   Para ello:
-// //   - Ingresar código de paciente (Number XXX, 3 dígitos de 1 a 999).
-//// /   - Si el código ingresado esta entre 1 y 99, es un paciente VIP.
-////// /     - Preguntarles "Como valoran la calidad del servicio? (1..10)". Guardar el resultado ingresado.
-//// /     - Agregar el código de paciente adelante en la cola (array) de turnos
-//// /   - Si el código ingresado esta entre 100 y 500, es un paciente de prepaga.
-//// /     - Agregar el código de paciente al final de la cola (array) de turnos
-//// /   - Si el código ingresado esta entre 501 y 999, es un paciente nuevo.
-//// /     - Preguntarles "Desea pasarse a VIP?". Si la respuesta es afirmativa, guardar el código de paciente.
-//// /     - Agregar el código de paciente al final de la cola (array) de turnos  
-//// /   - Si todos los pacientes fueron ingresados, informar en pantalla:
-//// /     - Calidad del servicio VIP. Informar valor promedio, valor máximo y valor mínimo.
-//// /     - Ingreso al consultorio: Mostrar en pantalla el orden de ingreso x código de paciente.
-//// /     - Pasarse a VIP: Mostrar en pantalla todos los códigos de pacientes que desean ser VIP 
-//// /   - Nota: Escribir código con funciones para facilitar su lectura.
+///10 De un consultorio médico nos piden automatizar el proceso de recepción de los pacientes. 
+//   Para ello:
+//   - Ingresar código de paciente (Number XXX, 3 dígitos de 1 a 999).
+// /   - Si el código ingresado esta entre 1 y 99, es un paciente VIP.
+//// /     - Preguntarles "Como valoran la calidad del servicio? (1..10)". Guardar el resultado ingresado.
+// /     - Agregar el código de paciente adelante en la cola (array) de turnos
+// /   - Si el código ingresado esta entre 100 y 500, es un paciente de prepaga.
+// /     - Agregar el código de paciente al final de la cola (array) de turnos
+// /   - Si el código ingresado esta entre 501 y 999, es un paciente nuevo.
+// /     - Preguntarles "Desea pasarse a VIP?". Si la respuesta es afirmativa, guardar el código de paciente.
+// /     - Agregar el código de paciente al final de la cola (array) de turnos  
+// /   - Si todos los pacientes fueron ingresados, informar en pantalla:
+// /     - Calidad del servicio VIP. Informar valor promedio, valor máximo y valor mínimo.
+// /     - Ingreso al consultorio: Mostrar en pantalla el orden de ingreso x código de paciente.
+// /     - Pasarse a VIP: Mostrar en pantalla todos los códigos de pacientes que desean ser VIP 
+// /   - Nota: Escribir código con funciones para facilitar su lectura.
 let todosLosPacientes = [];
 
 function Paciente(codigo, tipo, opinion, upgrade) {
