@@ -255,4 +255,4 @@ console.log(`Calidad de servicio. Valor promedio: ${promedio}`)
 console.log( `Valor maximo: ${Math.max(...pacientesVip)}`)
 console.log( `Valor minimo: ${Math.min(...pacientesVip)}`)
 
-ASAASSSSAAAAASSAAAW
+
