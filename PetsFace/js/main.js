@@ -33,16 +33,16 @@
 //   $("#contenidoGenerado").append(generarRobot(robot));
 // }
 
-// //FUNCION PARA GENERAR HTML
-// function generarRobot(robot) {
-//   return `<div class="column">
-//           <img src="${robot.avatar}">
-//           <div class="container">
-//             <h3>${robot.nombre} </h3>
-//             <button id=${robot.id}>AGREGA</button>
-//           </div>
-//           </div>`;
-// }
+//FUNCION PARA GENERAR HTML
+function generarRobot(robot) {
+  return `<div class="column">
+          <img src="${robot.avatar}">
+          <div class="container">
+            <h3>${robot.nombre} </h3>
+            <button id=${robot.id}>AGREGA</button>
+          </div>
+          </div>`;
+}
 
 // let listaAmigos = [];
 
